@@ -1,0 +1,34 @@
+baseURL: 'https://example.org/CV/'
+languageCode: 'en-us'
+title: 'Daniil Zinevich'
+languages:
+  en:
+    contentDir: content/en
+    disabled: false
+    languageCode: en-US
+    languageDirection: ltr
+    languageName: English
+    params:
+      subtitle: Contacts, Bio, Projects descriptions
+    title: Daniil Zinevich
+    weight: 1
+  be:
+    contentDir: content/be
+    disabled: false
+    languageCode: be-BY
+    languageDirection: ltr
+    languageName: Беларуская
+    params:
+      subtitle: Кантакты, Біяграфія, Асноўныя праекты
+    title: Данііл Зіневіч
+    weight: 2
+  ru:
+    contentDir: content/ru
+    disabled: false
+    languageCode: ru-RU
+    languageDirection: ltr
+    languageName: Русский
+    params:
+      subtitle: Контакты, Информация, Ключевые проекты
+    title: Даниил Зиневич
+    weight: 3
