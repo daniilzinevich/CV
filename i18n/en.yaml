@@ -1,0 +1,29 @@
+lang: EN
+name: Daniil Zinevich
+position: Web Developer
+contacts:
+  title: Contact info
+about:
+  title: About
+  years: 
+    one: "{{ . }} year"
+    other: "{{ . }}+ years"
+  education:
+    title: Education
+    university: Belarusian State University of Informatics and Radioelectronics
+    speciality: Bachelor of Science in Computer Systems And Networks
+  description:
+    web: "{{ . }} of experience in web development;"
+    experience: "{{ . }} of experience in IT;"
+    expertise: Extensive expertise in HTML5, CSS3, JavaScript, and JavaScript frameworks;
+    domain: Involved in implementation of a variety of web applications in various domains (including med-tech, banking and IOT);
+    js_community: Active member of JS community;
+    group: Ability to participate in individual or team software development process;
+    oop: Knowledge in OOP concept, design patterns, functional programming;
+projects:
+  title: Key projects
+hobbies:
+  title: Hobbies
+  description: Cycling, Hiking, Yoga
+responsibilities:
+  title: Responsibilities

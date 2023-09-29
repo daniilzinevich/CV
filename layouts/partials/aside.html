@@ -1,0 +1,59 @@
+<aside class="col-4">
+  <div class="avatar"></div>
+  <div class="fs-3 fw-bold">{{ T "name" }}</div>
+  <div class="fst-italic">{{ T "position" }}</div>
+  <div class="card my-3">
+    <div class="card-body">
+      <div class="card-title">{{ T "contacts.title" }}</div>
+      <div class="cart-text">
+        <ul class="list-unstyled">
+          <li>
+            <a href="phone:+37062700874" class="link-dark">
+              <span class="mdi mdi-cellphone"></span>&nbsp;
+              <span>+370 (627) 00 874</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:danila2412@gmail.com?subject=Нам понравилось ваше резюме" class="link-dark">
+              <span class="mdi mdi-email"></span>&nbsp;
+              <span>danila2412@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/daniilzinevich" class="link-dark">
+              <span class="mdi mdi-github-circle"></span>&nbsp;
+              <span>daniilzinevich</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/daniilzinevich" class="link-dark">
+              <span class="mdi mdi-twitter-circle"></span>&nbsp;
+              <span>daniilzinevich</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="print-no-brake">
+    <div class="title my-2">
+      <div class="px-2 fs-4 bg-primary-alt text-light">{{ T "about.title" }}</div>
+    </div>
+    <ul>
+      <li>{{ T "about.description.web" ( T "about.years" (sub now.Year 2017)) }}</li>
+      <li>{{ T "about.description.experience" ( T "about.years" (sub now.Year 2011)) }}</li>
+      <li>{{ T "about.description.expertise" }}</li>
+      <li>{{ T "about.description.domain" }}</li>
+      <li>{{ T "about.description.js_community" }}</li>
+      <li>{{ T "about.description.group" }}</li>
+      <li>{{ T "about.description.oop" }}</li>
+    </ul>
+  </div>
+  <div class="print-no-brake">
+    <div class="title mb-2 mt-4">
+      <div class="px-2 fs-4 bg-primary-alt text-light">{{ T "about.education.title" }}</div>
+    </div>
+    <div class="fs-5 fw-bold mt-2">{{ T "about.education.university" }}</div>
+    <div class="fs-6">{{ T "about.education.speciality" }}</div>
+  </div>
+</aside>
