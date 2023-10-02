@@ -1,9 +1,3 @@
-[submodule "static/sass/bootstrap"]
-	path = static/sass/bootstrap
-	url = git@github.com:twbs/bootstrap.git
-[submodule "assets/sass/bootstrap"]
-	path = assets/sass/bootstrap
-	url = git@github.com:twbs/bootstrap.git
 [submodule "assets/scss/bootstrap"]
 	path = assets/scss/bootstrap
 	url = git@github.com:twbs/bootstrap.git
