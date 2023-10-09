@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<link href="/CV/favicon.ico" rel="icon" type="image/x-icon">
 {{ $options := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
 {{ with resources.Get "scss/main.scss" | toCSS $options | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
