@@ -6,16 +6,6 @@
   --avatar-magnification: 0.14;
 }
 
-.avatar {
-  width: 150px;
-  height: 150px;
-  background-image: url('/CV/avatar.jpg');
-  background-repeat: no-repeat;
-  background-position: calc(var(--avatar-magnification) * -400px) calc(var(--avatar-magnification) * -40px);
-  background-size: calc(var(--avatar-magnification) * 2048px) calc(var(--avatar-magnification) * 1365px);
-  border-radius: 50%;
-}
-
 .print-no-brake {
   break-inside: avoid;
 }

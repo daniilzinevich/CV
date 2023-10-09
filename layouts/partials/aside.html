@@ -1,5 +1,10 @@
 <aside class="col-4">
-  <div class="avatar"></div>
+  {{ with resources.Get "images/avatar.jpg" }}
+    {{ $image := .Process "resize 620x Box" }}
+    {{ $image := $image.Process "crop 440x320 TopLeft" }}
+    {{ $image := $image.Process "crop 300x300 BottomRight" }}
+    <img src="{{ $image.RelPermalink }}" width="{{ div $image.Width 2 }}" height="{{ div $image.Height 2 }}" class="rounded-circle">
+  {{ end }}
   <div class="fs-3 fw-bold">{{ T "name" }}</div>
   <div class="fst-italic">{{ T "position" }}</div>
   <div class="card my-3">
@@ -8,25 +13,25 @@
       <div class="cart-text">
         <ul class="list-unstyled">
           <li>
-            <a href="phone:+37062700874" class="link-dark">
+            <a href="phone:+37062700874" target="_blank" rel="noopener noreferrer" class="link-dark">
               <span class="mdi mdi-cellphone"></span>&nbsp;
               <span>+370 (627) 00 874</span>
             </a>
           </li>
           <li>
-            <a href='mailto:danila2412@gmail.com?subject={{ T "contacts.reply_title" | urlquery }}' class="link-dark">
+            <a href='mailto:danila2412@gmail.com?subject={{ T "contacts.reply_title" | urlquery }}' target="_blank" rel="noopener noreferrer" class="link-dark">
               <span class="mdi mdi-email"></span>&nbsp;
               <span>danila2412@gmail.com</span>
             </a>
           </li>
           <li>
-            <a href="https://github.com/daniilzinevich" class="link-dark">
+            <a href="https://github.com/daniilzinevich" target="_blank" rel="noopener noreferrer" class="link-dark">
               <span class="mdi mdi-github-circle"></span>&nbsp;
               <span>daniilzinevich</span>
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/daniilzinevich" class="link-dark">
+            <a href="https://twitter.com/daniilzinevich" target="_blank" rel="noopener noreferrer" class="link-dark">
               <span class="mdi mdi-twitter-circle"></span>&nbsp;
               <span>daniilzinevich</span>
             </a>
