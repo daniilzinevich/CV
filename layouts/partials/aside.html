@@ -22,25 +22,29 @@
         <ul class="list-unstyled">
           <li>
             <a href="phone:+37062700874" target="_blank" rel="noopener noreferrer" class="link-dark">
-              <span class="mdi mdi-cellphone"></span>&nbsp;
+              {{ readFile "node_modules/@mdi/svg/svg/cellphone.svg" | safeHTML }}
+              &nbsp;
               <span>+370 (627) 00 874</span>
             </a>
           </li>
           <li>
             <a href='mailto:danila2412@gmail.com?subject={{ T "contacts.reply_title" | urlquery }}' target="_blank" rel="noopener noreferrer" class="link-dark">
-              <span class="mdi mdi-email"></span>&nbsp;
+              {{ readFile "node_modules/@mdi/svg/svg/email.svg" | safeHTML }}
+              &nbsp;
               <span>danila2412@gmail.com</span>
             </a>
           </li>
           <li>
             <a href="https://github.com/daniilzinevich" target="_blank" rel="noopener noreferrer" class="link-dark">
-              <span class="mdi mdi-github-circle"></span>&nbsp;
+              {{ readFile "node_modules/@mdi/svg/svg/github.svg" | safeHTML }}
+              &nbsp;
               <span>daniilzinevich</span>
             </a>
           </li>
           <li>
             <a href="https://twitter.com/daniilzinevich" target="_blank" rel="noopener noreferrer" class="link-dark">
-              <span class="mdi mdi-twitter-circle"></span>&nbsp;
+              {{ readFile "node_modules/@mdi/svg/svg/twitter.svg" | safeHTML }}
+              &nbsp;
               <span>daniilzinevich</span>
             </a>
           </li>

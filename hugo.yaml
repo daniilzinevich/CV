@@ -32,3 +32,6 @@ languages:
       subtitle: Контакты, Информация, Ключевые проекты
     title: Даниил Зиневич
     weight: 3
+mounts:
+  - source: node_modules
+    target: assets
