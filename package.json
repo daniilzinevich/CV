@@ -1,0 +1,21 @@
+{
+  "name": "cv",
+  "version": "0.1.0",
+  "description": "My CV project",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniilzinevich/CV.git"
+  },
+  "author": "Daniil Zinevich (danila2412@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniilzinevich/CV/issues"
+  },
+  "homepage": "https://github.com/daniilzinevich/CV#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2"
+  }
+}

@@ -1,0 +1,16 @@
+<div class="container my-2 position-relative">
+  <div class="position-absolute top-0 end-0 d-print-none">
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        <span class="mdi mdi-translate"></span>
+      </button>
+      <ul class="dropdown-menu">
+        {{ range $.Site.Home.AllTranslations }}
+        <li>
+          <a href="{{ .Permalink }}" class="dropdown-item">{{ .Language.LanguageName }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
