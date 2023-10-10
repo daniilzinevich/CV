@@ -4,7 +4,13 @@
       {{ $image := .Process "resize 620x Box" }}
       {{ $image := $image.Process "crop 440x320 TopLeft" }}
       {{ $image := $image.Process "crop 300x300 BottomRight" }}
-      <img src="{{ $image.RelPermalink }}" width="{{ div $image.Width 2 }}" height="{{ div $image.Height 2 }}" class="rounded-circle">
+      <img
+        class="rounded-circle"
+        alt='{{ T "photo" }}'
+        src="{{ $image.RelPermalink }}"
+        width="{{ div $image.Width 2 }}"
+        height="{{ div $image.Height 2 }}"
+      >
     {{ end }}
     <div class="fs-3 fw-bold">{{ T "name" }}</div>
     <div class="fst-italic">{{ T "position" }}</div>
